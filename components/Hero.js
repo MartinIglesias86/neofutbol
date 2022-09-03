@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
 
-const { heroContent, heroWrapper, imageWrapper } = styles;
+const { heroContent, heroWrapper, glowOnHover } = styles;
 
 const IMAGE_URL = "/Hero2.png";
 
@@ -19,7 +19,7 @@ export default function Hero() {
           alt="Imagenes de figuritas de futbol"
         />
       <div className={heroContent}>
-        <Button variant="danger">Conecta tu wallet</Button>{' '}
+        <Button className={glowOnHover} variant="danger" size="lg">Conecta tu wallet</Button>{' '}
       </div>
     </div>
   );
