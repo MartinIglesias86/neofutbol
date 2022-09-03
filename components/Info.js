@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Image from "next/image";
 import wallets from "../public/wallets.png";
 import cards from "../public/cards.png";
+import album from "../public/album.png";
 import { glowOnHover } from "../styles/Hero.module.css";
 
 export default function Info() {
@@ -26,7 +27,7 @@ export default function Info() {
         <p>No solo puedes ganar obteniendo figuritas difíciles, también puedes ganar con su Tier y, ademas, si eres la 
           primer persona en completar el album al 100% ganas un premio especial de 2 Ethers!
         </p>
-        <Image></Image>
+        <Image src={album}></Image>
       </div>
       <div>
         <h3>Comenzá...</h3>
