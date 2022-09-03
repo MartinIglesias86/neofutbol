@@ -1,0 +1,27 @@
+.bloque {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+.bloque > * {
+  flex-basis: 40%;
+  margin: 30px auto;
+}
+
+.bloqueTexto {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bloqueImg {
+  border-radius: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
