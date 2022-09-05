@@ -40,9 +40,8 @@ function Header() {
                   <Nav.Link href="#home" onClick={handleClose}>Home</Nav.Link>
                   <Nav.Link href="#info" onClick={handleClose}>Como funciona?</Nav.Link>
                   <Nav.Link href="#scoreboard" onClick={handleClose}>Tabla de posiciones</Nav.Link>
+                  <br />
                   <Button className={glowOnHover} variant="danger" size="sm">Conecta tu wallet</Button>{' '}
-                  <Nav.Link href="#action2">Mi album</Nav.Link>
-                  <Nav.Link href="#action2">Intercambio</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
