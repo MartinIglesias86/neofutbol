@@ -7,9 +7,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function Header() {
   return (
-    <section id='navbar'>
+    <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="dark" variant="dark" expand={expand} className="mb-3" sticky="top" >
+        <Navbar key={expand} bg="dark" variant="dark" expand={expand} className="mb-3" sticky="top">
           <Container fluid>
           <Navbar.Brand href="#home">
             <img
@@ -32,7 +32,7 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home"  >Home</Nav.Link>
+                  <Nav.Link href="#home">Home</Nav.Link>
                   <Nav.Link href="#info">Como funciona?</Nav.Link>
                   <Nav.Link href="#scoreboard">Tabla de posiciones</Nav.Link>
                   <Nav.Link href="#action2">Mi album</Nav.Link>
@@ -43,7 +43,7 @@ function Header() {
           </Container>
         </Navbar>
       ))}
-    </section>
+    </>
   );
 }
 
