@@ -4,7 +4,16 @@ import { footer } from "../styles/Footer.module.css";
 export default function Footer() {
   return(
     <div className={footer}>
-      <p>Made with <span role="img" aria-label="love">💜</span> by NFT Neo FuTbol</p>
+      <div>Made with <span role="img" aria-label="love">💜</span> by 
+        <a href="#home">
+          <img
+                alt="logo"
+                src="/logo.png"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+        </a>
+      </div>
     </div>
   )
 }

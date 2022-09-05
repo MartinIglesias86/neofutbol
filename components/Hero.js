@@ -9,7 +9,8 @@ const IMAGE_URL = "/Hero2.png";
 
 export default function Hero() {
   return (
-    <div className={heroWrapper}>
+    <section id="hero">
+      <div className={heroWrapper} id='home'>
         <Image
           priority
           src={IMAGE_URL}
@@ -22,5 +23,6 @@ export default function Hero() {
         <Button className={glowOnHover} variant="danger" size="lg">Conecta tu wallet</Button>{' '}
       </div>
     </div>
+    </section>
   );
 } 

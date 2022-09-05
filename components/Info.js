@@ -11,11 +11,11 @@ const { bloque, bloqueTexto, reverse, bloqueImg } = styles;
 
 export default function Info() {
   return (
-    <section>
+    <section id="info">
       <div className={bloque}>
         <div className={bloqueTexto}>
           <h3>¿Qué es NFT Neo FuTbol?</h3>
-          <p>Bienvenide al primer album digital de figuritas del Mundial Qatar 2022! 
+          <div>Bienvenide al primer album digital de figuritas del Mundial Qatar 2022! 
             <br />
             <b>Neo FuTbol</b> te permite coleccionar NFTs de los jugadores participantes en el Mundial de futbol de Qatar 2022,
             cada figurita tiene su propia rareza, no solo por la cantidad de figuritas disponibles sino también por su Tier:
@@ -24,7 +24,7 @@ export default function Info() {
               <li>Tier Heroico: figurita de cuerpo azulado y marco con decoraciones doradas.</li>
               <li>Tier Legendario: figurita de cuerpo platinado y marco con decoraciones doradas y platinadas.</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div>
           <Image src={cards} className={bloqueImg}></Image>
@@ -33,9 +33,9 @@ export default function Info() {
       <div className={[bloque, reverse].join(" ")}>
         <div className={bloqueTexto}>
           <h3>Ganar, ganar y ganar!</h3>
-          <p>No solo puedes ganar obteniendo figuritas difíciles, también puedes ganar con su Tier y, ademas, si eres la
+          <div>No solo puedes ganar obteniendo figuritas difíciles, también puedes ganar con su Tier y, ademas, si eres la
             primer persona en completar el album al 100% ganas un premio especial de 2 Ethers!
-          </p>
+          </div>
         </div>
         <div>
           <Image src={album} className={bloqueImg}></Image>
@@ -44,13 +44,13 @@ export default function Info() {
       <div className={bloque}>
         <div className={bloqueTexto}>
           <h3>Comenzá...</h3>
-          <p>Comenzar a ser dueño de tu pasión es fácil:
+          <div>Comenzar a ser dueño de tu pasión es fácil:
             <ul>
               <li>Conecta tu wallet</li>
               <li>Compra tus primeras figuritas</li>
               <li>Compartí tu pasión!</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div>
           <Image src={wallets} className={bloqueImg}></Image>

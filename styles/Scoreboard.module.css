@@ -1,0 +1,43 @@
+.title {
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.cardContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.cardContainer *{
+  color: aliceblue;
+}
+.cardContainer > * {
+  background-image: url('../public/bgpasto.png');
+  text-align: center;
+}
+.cardContainer > * > * {
+  margin: 5%;
+  background-color: #00000080;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.bloque > * {
+flex-basis: 40%;
+margin: 30px auto;
+}
+
+.imagenContenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
